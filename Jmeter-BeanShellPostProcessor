@@ -1,0 +1,16 @@
+import java.io.*;
+ 
+byte[] result = prev.getResponseData();  //get response data
+ 
+String file_name = "C:\\testdetail.xlsx" ; //set file that save response data
+ 
+File file = new File(file_name);
+ 
+FileOutputStream out = new FileOutputStream(file);
+ 
+out.write(result);
+ 
+out.close(); 
+
+
+// use jmeter to down some file from API and save to file that you set
